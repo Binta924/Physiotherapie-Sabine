@@ -1,0 +1,398 @@
+ html, body {
+             background: rgb(255,255,240);
+             color:white;
+             font-family: Helvetica Neue, Helvetica,Arial,sans-serif;
+             margin: 0;
+             padding: 0;
+             height:100%;
+             }
+
+
+        header {
+            padding: 30px;
+            height:auto;
+            background: black;
+            background-image: url("../Bilder/Hände.jpg");
+            background-size:100%;
+            background-position: center;
+            background-repeat:no-repeat;
+            color: rgb(0, 0, 139);
+            text-align:center;
+            justify-content: center;
+
+         }
+
+         @media screen and (max-width: 768px) {
+             header {
+                 background-size: cover;
+
+             }
+         }
+
+
+        .profilbild {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            visibility: hidden;
+        }
+
+        /* Optional, falls du das Bild als Hintergrundbild einfügen möchtest */
+        .image-container {
+            width: 300px;
+            height: 300px;
+            background-image: url("../Bilder/Sabine.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+
+
+
+
+         header a{
+         color: white;
+         text-decoration: none;
+         text-transform: uppercase;
+         margin-top: 40px;
+        }
+
+        header .logo a {
+        background-image: url("../Bilder/Praxis Logo.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        position:relative;
+        text-indent:-9999999px;
+        display: inline-block;
+        height: 100px;
+        top:-100px;
+        width: 300px;
+
+        }
+
+        .mein-Video {
+           width: 300px;
+           height: auto;
+        }
+
+       .Telefonnumer, .E-mail {
+       color: blue;
+       text-decoration: underline;
+       }
+
+        .Ort {
+        color: black;
+        font-size: 20px;
+        font-family:  Helvetica Neue, Helvetica,Arial,sans-serif;
+        font-weight: normal;
+        line-height: 2;
+        margin-top: -10px;
+}
+
+       .kontakt {
+       color: black;
+       font-size: 14px;
+       font-family:  Helvetica Neue, Helvetica,Arial,sans-serif;
+       font-weight: normal;
+       line-height:2;
+       margin-bottom: 20px;
+       margin-top: -30px;
+       image:url "..styles\Bilder\Physio.jpg";
+       }
+
+
+
+       .Leistungen {
+       color: black;
+       font-size: 14px;
+       font-family:  Helvetica Neue, Helvetica,Arial,sans-serif;
+       font-weight: normal;
+       margin-bottom: 20px;
+       margin-top: -30px;
+       }
+
+       .Vojta- {
+       line-height: 2;
+       }
+
+       .Behandlungsform, .Leistung, .moi {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+       }
+
+       .V, .sanft {
+       color: blue;
+       font-weight: bold;
+       font-size: 15px;
+       }
+
+       .Gutscheine {
+       color: blue;
+       }
+
+
+
+       .Wichtig {
+       font-weight: bold;
+       font-size: 25px;
+       color: red;
+       }
+
+       .Übermich {
+       color: black;
+       font-size: 25px;
+       font-family:  Helvetica Neue, Helvetica,Arial,sans-serif;
+       font-weight: normal;
+       line-height: 1,5px;
+       margin-bottom: 20px;
+       margin-top: -30px;
+       }
+
+
+        section{
+            background: white;
+            color: gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 120px;
+            font-size: 15px;
+
+         }
+
+        .section-unterteil-section {
+        color: black;
+        font-size: 16px;
+        font-family:  Helvetica Neue, Helvetica,Arial,sans-serif;
+        font-weight: normal;
+        line-height:2;
+        padding-left: 23px;
+        margin-bottom: 20px;
+        margin-top: -30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .section-unterteil-section{
+            padding-left: 30px;
+            }
+        }
+
+        .fett-text-ort {
+        font-weight: bold;
+        font-size: 20px;
+        color: blue;
+        }
+
+        .fett-text {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: black;
+            white-space: nowrap;
+        }
+
+        .text-section {
+            display: flex;
+            justify-content: flex-start; /* Zentriert die Textteile horizontal */
+            align-items: center;     /* Zentriert die Textteile vertikal */
+            margin-top: 50px;
+            padding-left: 30px;
+            width: 100%;
+        }
+
+        .welcome-text, .practice-text, .name-text {
+            display: inline-block;   /* Standardmäßig als Inline-Elemente, sodass sie nebeneinander stehen */
+            margin-right: 0;      /* Abstand von 30px nach rechts */
+            margin-bottom: 20px;  /* Abstand nach unten */
+            margin-right: 0;
+            text-align: left;
+            word-wrap: break-word;   /* Sorgt dafür, dass lange Wörter umgebrochen werden */
+            width: auto;
+            box-sizing: border-box;                         /* Automatische Breite, wenn sie nebeneinander stehen */
+
+        }
+
+        /* Anpassungen für kleine Bildschirme */
+        @media screen and (max-width: 768px) {
+            .text-section {
+                display: block; /* Auf kleinen Geräten wird der Text untereinander angezeigt */
+                padding-left: 30px;
+            }
+
+
+            .welcome-text, .practice-text, .name-text {
+                display: block;   /* Auf kleinen Geräten wird jedes Text-Element in einer neuen Zeile angezeigt */
+                margin-right: 0;   /* Entfernt den rechten Abstand */
+                margin-left: 0; /* Fügt links einen Abstand von 30px hinzu */
+                margin-bottom: 10px; /* Weniger Abstand nach unten */
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        div{
+            background: rgb(0, 0, 139);
+            margin: auto;
+            width: 100px;
+        }
+        ul{
+           margin: 0;
+           padding: 0;
+           list-style-type: none;
+           display: flex;
+
+        }
+
+
+        li {
+           display: inline-block;
+           margin-right:20px;
+        }
+
+        a:hover {
+           text-decoration: underline;
+        }
+
+        .footer-unterteil-footer {
+            padding: 20px 0; /* Optional, um den Abstand im Footer zu steuern */
+            background-color: #f5f5f5; /* Optional, fügt einen Hintergrund hinzu */
+        }
+
+        .video-container {
+            width: 100%; /* Stellt sicher, dass der Container die gesamte Breite ausfüllt */
+            max-width: 1200px; /* Maximale Breite des Videos (optional, du kannst es auch anpassen) */
+            margin: 0 auto; /* Zentriert das Video im Container */
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px; /* Die Höhe des Videos */
+            object-fit: cover; /* Das Video wird gestreckt, um den Container auszufüllen */
+        }
+
+        footer {
+             background: black;
+             color: white;
+             padding: 20px;
+        }
+
+
+
+        /* Allgemeine Layout-Einstellungen */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Damit die Elemente bei Bedarf in neue Zeilen umbrochen werden */
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Für den Header */
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        /* Beispiel für ein flexibles Layout für ein paar Sektionen */
+        section {
+            flex: 1 1 45%; /* 45% Breite auf großen Bildschirmen */
+            margin: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+
+
+
+        /* Tablet: bei max. 768px Bildschirmbreite */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Elemente untereinander anzeigen */
+                align-items: center; /* Elemente in der Mitte ausrichten */
+            }
+
+            section {
+                flex: 1 1 90%; /* Auf Tablets (und kleineren Geräten) nehmen die Sektionen 90% der Breite ein */
+                margin: 10px 0;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            footer {
+                padding: 15px;
+            }
+        }
+
+        /* Handys: bei max. 480px Bildschirmbreite */
+        @media (max-width: 480px) {
+            .container {
+                flex-direction: column; /* Elemente untereinander anordnen */
+                align-items: center; /* Alle Elemente zentrieren */
+            }
+
+            section {
+                flex: 1 1 100%; /* Sektionen nehmen 100% der Breite ein */
+                margin: 10px 0;
+                padding: 15px;
+            }
+
+            header {
+                padding: 10px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+        }
+
+
+
+/* Footer-Stil anpassen */
+footer {
+    margin: 0;         /* Entfernt alle äußeren Ränder */
+    padding: 0;        /* Entfernt alle inneren Abstände */
+    background-color: black; /* Schwarzer Balken */
+    height: 50px;      /* Du kannst die Höhe nach Bedarf anpassen */
+}
+
+/* Entfernt unerwünschte Ränder nach dem Footer */
+body, html {
+    margin: 0;         /* Entfernt die Standardmarge von HTML und Body */
+    padding: 0;        /* Entfernt das Standard-Padding */
+}
+
+/* Falls noch ein Abschnitt mit Leerraum ist */
+section, .section-unterteil-section {
+    margin-bottom: 0;  /* Entfernt die untere Marge in Sektionen */
+    padding-bottom: 0; /* Entfernt das untere Padding */
+}
+
+
