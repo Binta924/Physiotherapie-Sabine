@@ -221,3 +221,77 @@ nav {
     font-size: 23px;
     color: red;
 }
+
+.fuhlendorf {
+  display: flex; /* Ermöglicht Anordnung von Text und Bildern nebeneinander */
+  align-items: center; /* Zentriert die Elemente vertikal */
+  gap: 20px; /* Abstand zwischen Text und Bildern */
+  color: black; /* Textfarbe */
+  font-size: 14px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left; /* Links ausgerichtet */
+  padding: 50px; /* Innenabstand */
+  flex-wrap: wrap; /* Ermöglicht Umbruch bei kleinerem Bildschirm */
+}
+
+.fuhlendorf-text {
+  flex: 1; /* Text bekommt so viel Platz wie nötig */
+}
+
+.fuhlendorf-bilder {
+  display: flex;
+  flex-wrap: wrap; /* Bilder werden bei Bedarf umgebrochen */
+  gap: 10px; /* Abstand zwischen den Bildern */
+}
+
+.fuhlendorf-bilder img {
+  width: 150px; /* Breite der Bilder anpassen */
+  height: auto; /* Höhe automatisch anpassen */
+  border-radius: 10px; /* Abgerundete Ecken (optional) */
+  transition: all 0.3s ease; /* Sanfte Übergänge für das Anpassen */
+}
+
+/* Anpassung für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .fuhlendorf {
+    flex-direction: column; /* Elemente werden untereinander statt nebeneinander */
+    padding: 30px; /* Weniger Innenabstand auf kleineren Bildschirmen */
+  }
+
+  .fuhlendorf-bilder {
+    justify-content: center; /* Bilder zentrieren */
+  }
+
+  .fuhlendorf-bilder img {
+    width: 120px; /* Bilder werden kleiner auf mobilen Geräten */
+  }
+}
+
+.fuhlendorf-text {
+    margin-bottom: 20px; /* Abstand zwischen Text und Bildern */
+  }
+}
+
+
+/* Anpassung für sehr kleine Bildschirme (z.B. Handys im Hochformat) */
+@media (max-width: 480px) {
+  .fuhlendorf-bilder img {
+    width: 100px; /* Bilder weiter verkleinern */
+  }
+
+  .fuhlendorf {
+    padding: 20px; /* Noch weniger Innenabstand auf sehr kleinen Bildschirmen */
+  }
+}
+
+
+
+
+
+.Fuhlendorf1, .Produkte{
+ font-size: 25px;
+ color: black;
+}
+
