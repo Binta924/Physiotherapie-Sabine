@@ -32,15 +32,6 @@ header a {
     text-transform: uppercase;
 }
 
-header .logo a {
-    background: url("../Bilder/Praxis Logo.jpg") no-repeat;
-    background-size: 300px;
-    position: relative;
-    text-indent: -9999999px;
-    display: inline-block;
-    height: auto;
-    width: 100px;
-}
 
 /* Hauptcontainer */
 .container {
