@@ -177,7 +177,7 @@ footer {
 }
 
 
-ul {
+.navlinks{
     list-style: none;    /* Entfernt die Aufzählungszeichen */
     padding: 0;     /* Entfernt die Einrückung */
     margin: 0; /* Entfernt den Standard-Abstand */
