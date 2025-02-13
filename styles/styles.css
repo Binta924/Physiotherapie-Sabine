@@ -20,8 +20,8 @@ header {
     background-size: cover;
     /*background-position: left;  !* Das Bild beginnt am linken Rand *!*/
     /*!*background-repeat: no-repeat;*!*/
-    border-bottom-left-radius:50px;
-    border-bottom-right-radius:50px;
+    /*!*border-bottom-left-radius:50px;*!*/
+    /*border-bottom-right-radius:50px;*/
     color: rgb(0, 0, 139);
     text-align: center;
     justify-content: center;
