@@ -289,12 +289,64 @@ nav {
   }
 }
 
-
-
-
-
 .Fuhlendorf1, .Produkte{
  font-size: 25px;
  color: black;
 }
+
+/* Navigation */
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: black;
+     padding: 10px 20px;
+ }
+
+ .nav-links {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+ }
+
+ .nav-links li {
+     display: inline;
+ }
+
+ .nav-links a {
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+ }
+
+ /* Hamburger-Icon */
+ .menu-icon {
+     display: none;
+     font-size: 30px;
+     color: white;
+     cursor: pointer;
+ }
+
+ /* Responsive Menü */
+ @media (max-width: 768px) {
+     .menu-icon {
+         display: block;
+     }
+
+     .nav-links {
+         display: none;
+         flex-direction: column;
+         background-color: black;
+         width: 100%;
+         position: absolute;
+         top: 50px;
+         left: 0;
+         padding: 10px;
+     }
+
+     .nav-links.show {
+         display: flex;
+     }
+ }
+
 
